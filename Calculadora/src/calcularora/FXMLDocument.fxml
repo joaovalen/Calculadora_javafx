@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcularora.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="382.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="317.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.4809523809523809">
+               <stops>
+                  <Stop color="#6e6f75" />
+                  <Stop color="#b2b0a5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="78.0" layoutX="27.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="104.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7067ab" />
+                  <Stop color="#2bafb9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="241.0" layoutX="27.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="199.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7067ab" />
+                  <Stop color="#2bafb9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button id="button_8" fx:id="button_eight" layoutX="103.0" layoutY="149.0" mnemonicParsing="false" onAction="#button_eight_pressed" prefHeight="38.0" prefWidth="45.0" text="8">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tela_first_number" layoutX="41.0" layoutY="47.0" prefHeight="53.0" prefWidth="76.0" />
+      <Button id="button_7" fx:id="button_seven" layoutX="39.0" layoutY="149.0" mnemonicParsing="false" onAction="#button_seven_pressed" prefHeight="38.0" prefWidth="45.0" text="7">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_9" fx:id="button_nine" layoutX="166.0" layoutY="149.0" mnemonicParsing="false" onAction="#button_nine_pressed" prefHeight="38.0" prefWidth="45.0" text="9">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_8" fx:id="button_four" layoutX="39.0" layoutY="209.0" mnemonicParsing="false" onAction="#button_four_pressed" prefHeight="38.0" prefWidth="45.0" text="4">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_5" fx:id="button_five" layoutX="103.0" layoutY="209.0" mnemonicParsing="false" onAction="#button_five_pressed" prefHeight="38.0" prefWidth="45.0" text="5">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_6" fx:id="button_six" layoutX="166.0" layoutY="209.0" mnemonicParsing="false" onAction="#button_six_pressed" prefHeight="38.0" prefWidth="45.0" text="6">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_1" fx:id="button_one" layoutX="39.0" layoutY="268.0" mnemonicParsing="false" onAction="#button_one_pressed" prefHeight="38.0" prefWidth="45.0" text="1">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_2" fx:id="button_two" layoutX="103.0" layoutY="268.0" mnemonicParsing="false" onAction="#button_two_pressed" prefHeight="38.0" prefWidth="45.0" text="2">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_3" fx:id="button_three" layoutX="166.0" layoutY="268.0" mnemonicParsing="false" onAction="#button_three_pressed" prefHeight="38.0" prefWidth="45.0" text="3">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_0" fx:id="button_zero" layoutX="39.0" layoutY="325.0" mnemonicParsing="false" onAction="#button_zero_pressed" prefHeight="38.0" prefWidth="45.0" text="0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_dot" fx:id="button_dot" layoutX="104.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text=".">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_result" fx:id="button_result" layoutX="166.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="=">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_divide" fx:id="button_divide" layoutX="246.0" layoutY="149.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="/">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_minus" fx:id="button_minus" layoutX="246.0" layoutY="209.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="-">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_times" fx:id="button_times" layoutX="246.0" layoutY="268.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="x">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button id="button_plus" fx:id="button_plus" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="+">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="78.0" layoutX="189.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="104.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7067ab" />
+                  <Stop color="#2bafb9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="tela_second_number" layoutX="203.0" layoutY="48.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="tela_operator" layoutX="142.0" layoutY="59.0" prefHeight="30.0" prefWidth="33.0" />
+   </children>
+</AnchorPane>
