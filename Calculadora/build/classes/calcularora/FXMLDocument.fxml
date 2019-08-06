@@ -92,32 +92,32 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Button>
-      <Button id="button_dot" fx:id="button_dot" layoutX="104.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text=".">
+      <Button id="button_dot" fx:id="button_dot" layoutX="104.0" layoutY="325.0" mnemonicParsing="false" onAction="#button_dot_pressed" prefHeight="38.0" prefWidth="45.0" text=".">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Button>
-      <Button id="button_result" fx:id="button_result" layoutX="166.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="=">
+      <Button id="button_result" fx:id="button_result" layoutX="166.0" layoutY="325.0" mnemonicParsing="false" onAction="#button_result_pressed" prefHeight="38.0" prefWidth="45.0" text="=">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Button>
-      <Button id="button_divide" fx:id="button_divide" layoutX="246.0" layoutY="149.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="/">
+      <Button id="button_divide" fx:id="button_divide" layoutX="246.0" layoutY="149.0" mnemonicParsing="false" onAction="#button_divide_pressed" prefHeight="38.0" prefWidth="45.0" text="/">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Button>
-      <Button id="button_minus" fx:id="button_minus" layoutX="246.0" layoutY="209.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="-">
+      <Button id="button_minus" fx:id="button_minus" layoutX="246.0" layoutY="209.0" mnemonicParsing="false" onAction="#button_minus_pressed" prefHeight="38.0" prefWidth="45.0" text="-">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Button>
-      <Button id="button_times" fx:id="button_times" layoutX="246.0" layoutY="268.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="x">
+      <Button id="button_times" fx:id="button_times" layoutX="246.0" layoutY="268.0" mnemonicParsing="false" onAction="#button_times_pressed" prefHeight="38.0" prefWidth="45.0" text="x">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Button>
-      <Button id="button_plus" fx:id="button_plus" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="45.0" text="+">
+      <Button id="button_plus" fx:id="button_plus" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" onAction="#button_plus_pressed" prefHeight="38.0" prefWidth="45.0" text="+">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
