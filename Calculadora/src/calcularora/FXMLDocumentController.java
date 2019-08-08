@@ -65,12 +65,16 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       tela_operator.setText(null);
+       tela_operator.setText("");
+       tela_first_number.setEditable(false);
+       tela_second_number.setEditable(false);
+       tela_operator.setEditable(false);
+       
     }    
 
     @FXML
     private void button_zero_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "0");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "0");
@@ -79,7 +83,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void button_one_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "1");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "1");
@@ -88,7 +92,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void button_two_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "2");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "2");
@@ -97,7 +101,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void button_three_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "3");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "3");
@@ -106,7 +110,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void button_four_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "4");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "4");
@@ -115,7 +119,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void button_five_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "5");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "5");
@@ -124,7 +128,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void button_six_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "6");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "6");
@@ -133,7 +137,7 @@ public class FXMLDocumentController implements Initializable {
  
     @FXML
     private void button_seven_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "7");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "7");
@@ -142,7 +146,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void button_eight_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "8");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "8");
@@ -151,7 +155,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void button_nine_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_first_number.setText(tela_first_number.getText() + "9");
         }else{
             tela_second_number.setText(tela_second_number.getText() + "9");
@@ -160,13 +164,13 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void button_dot_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             if (tela_first_number.getText().contains(".")){
             }else{
                 tela_first_number.setText(tela_first_number.getText() + ".");
             }
         }else{
-             if (tela_second_number.getText().contains(".")){
+            if (tela_second_number.getText().contains(".")){
             }else{
                 tela_second_number.setText(tela_second_number.getText() + ".");
             }
@@ -178,35 +182,35 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void button_result_pressed(ActionEvent event) {
         float result = operation();
-        tela_operator.setText(null);
-        tela_first_number.setText(null);
-        tela_second_number.setText(null);
+        tela_operator.setText("");
+        tela_first_number.setText("");
+        tela_second_number.setText("");
     }
 
     @FXML
     private void button_divide_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_operator.setText("/");
         }
     }
 
     @FXML
     private void button_minus_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_operator.setText("-");
         }
     }
 
     @FXML
     private void button_times_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_operator.setText("x");
         }
     }
 
     @FXML
     private void button_plus_pressed(ActionEvent event) {
-        if (tela_operator.getText() == null){
+        if (tela_operator.getText().equals("")){
             tela_operator.setText("+");
         }
     }
@@ -269,7 +273,22 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void number_click(KeyEvent event) {
-        event.getText();
+        /*if (event.getCode().isDigitKey()){
+            keyboard_number(event);
+        }else
+*/
+        System.out.println(event.getText());
+            if (event.getSource() == button_divide){
+                System.out.println("OK");
+            }
+    }
+    
+    private void keyboard_number(KeyEvent event){
+        if (tela_operator.getText().equals("")){
+            tela_first_number.setText(tela_first_number.getText() + event.getText());
+        }else{
+            tela_second_number.setText(tela_second_number.getText() + event.getText());
+        }
     }
     
     
