@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -185,6 +186,7 @@ public class FXMLDocumentController implements Initializable {
         tela_operator.setText("");
         tela_first_number.setText("");
         tela_second_number.setText("");
+        show_result(result);
     }
 
     @FXML
@@ -270,26 +272,15 @@ public class FXMLDocumentController implements Initializable {
         float result = first_number / second_number;
         return result;
     }
+    
+    private void show_result(Float result) {
+        Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+        dialogoInfo.setTitle("Diálogo de informação");
+        dialogoInfo.setHeaderText("O seu resultado é " + result);
+        dialogoInfo.setContentText("Brigadão por usar a calculadora");
+        dialogoInfo.showAndWait();
+    }
+    
 
-    @FXML
-    private void number_click(KeyEvent event) {
-        /*if (event.getCode().isDigitKey()){
-            keyboard_number(event);
-        }else
-*/
-        System.out.println(event.getText());
-            if (event.getSource() == button_divide){
-                System.out.println("OK");
-            }
-    }
-    
-    private void keyboard_number(KeyEvent event){
-        if (tela_operator.getText().equals("")){
-            tela_first_number.setText(tela_first_number.getText() + event.getText());
-        }else{
-            tela_second_number.setText(tela_second_number.getText() + event.getText());
-        }
-    }
-    
-    
 }
+
